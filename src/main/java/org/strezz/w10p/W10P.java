@@ -33,7 +33,7 @@ public class W10P {
     public static W10P INSTANCE;
 
     /**
-     *
+     * This is the proxy of the mod.
      */
     @SidedProxy(clientSide = ModInfo.CLIENT_PROXY_CLASS, serverSide = ModInfo.SERVER_PROXY_CLASS)
     public static IProxy proxy;
