@@ -14,7 +14,7 @@ public class ItemBase extends Item {
         setUnlocalizedName(name);
         setRegistryName(name);
 
-        setCreativeTab(W10PCreativeTabs.mainTab);
+        setCreativeTab(W10PCreativeTabs.items);
     }
 
     public void registerItemModel() {

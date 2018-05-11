@@ -18,7 +18,7 @@ public class BlockBase extends Block {
 
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(W10PCreativeTabs.mainTab);
+        setCreativeTab(W10PCreativeTabs.blocks);
     }
 
     public void registerItemModel(Item itemblock) {
