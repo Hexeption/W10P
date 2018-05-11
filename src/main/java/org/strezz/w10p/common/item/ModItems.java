@@ -2,10 +2,7 @@ package org.strezz.w10p.common.item;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
-import org.strezz.w10p.common.item.items.ItemMedicineBlindness;
-import org.strezz.w10p.common.item.items.ItemMedicineNausea;
-import org.strezz.w10p.common.item.items.ItemMedicinePoison;
-import org.strezz.w10p.common.item.items.ItemMedicineWeakness;
+import org.strezz.w10p.common.item.items.*;
 
 import java.lang.reflect.Field;
 
@@ -71,7 +68,7 @@ public class ModItems {
      * Items
      */
     public static ItemBase ice_bomb = new ItemBase("ice_bomb");
-    public static ItemBase rapid_fertilizer = new ItemBase("rapid_fertilizer");
+    public static ItemBase rapid_fertilizer = new ItemRapidFertilizer();
     public static ItemBase sparkler_blue = new ItemBase("sparkler_blue");
     public static ItemBase sparkler_green = new ItemBase("sparkler_green");
     public static ItemBase sparkler_orange = new ItemBase("sparkler_orange");
