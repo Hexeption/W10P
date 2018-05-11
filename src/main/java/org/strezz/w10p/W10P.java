@@ -15,6 +15,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import org.strezz.w10p.common.block.ModBlocks;
 import org.strezz.w10p.common.config.Config;
 import org.strezz.w10p.common.item.ModItems;
 import org.strezz.w10p.common.utils.LogHelper;
@@ -44,6 +45,7 @@ public class W10P {
     public static Configuration configuration;
 
     public static ModItems modItems = new ModItems();
+    public static ModBlocks modBlocks = new ModBlocks();
 
     /**
      * This is the first initialization event. Register tile entities here.
@@ -96,15 +98,18 @@ public class W10P {
         @SubscribeEvent
         public static void registerItems(RegistryEvent.Register<Item> event) {
             modItems.register(event.getRegistry());
+            modBlocks.registerItemBlocks(event.getRegistry());
         }
 
         @SubscribeEvent
         public static void registerBlocks(RegistryEvent.Register<Block> event) {
+            modBlocks.register(event.getRegistry());
         }
 
         @SubscribeEvent
         public static void registerModels(ModelRegistryEvent event) {
             modItems.registerModels();
+            modBlocks.registerModels();
         }
 
     }

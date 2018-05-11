@@ -10,7 +10,7 @@ public class ModItems {
     /**
      * Compoents
      */
-    public static ItemBase bleach = new ItemBase("bleach");
+    public static ItemBase bleach = new ItemBleach();
     public static ItemBase garbage = new ItemBase("garbage");
     public static ItemBase glue = new ItemBase("glue");
     public static ItemBase salt = new ItemBase("salt");
