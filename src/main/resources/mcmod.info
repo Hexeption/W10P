@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "w10p",
+    "name": "Windows 10 Port",
+    "description": "Porting over some feature left out of java minecraft",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": ["Strezz"],
+    "credits": "Minecraft Team for textures",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

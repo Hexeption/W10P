@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "w10p:items/compounds/beaker_indigo"
+  }
+}
